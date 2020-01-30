@@ -2,7 +2,7 @@
 //  SceneDelegate.swift
 //  SwiftUI-CoreData
 //
-//  Created by Savedroid on 1/28/20.
+//  Created by Vakhtangi Beridze on 1/28/20.
 //  Copyright © 2020 22Round. All rights reserved.
 //
 
