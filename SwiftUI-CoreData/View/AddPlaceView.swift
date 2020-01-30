@@ -36,9 +36,3 @@ struct AddPlaceView: View {
         }.padding()
     }
 }
-
-struct AddPlaceView_Previews: PreviewProvider {
-    static var previews: some View {
-        AddPlaceView()
-    }
-}

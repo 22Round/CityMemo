@@ -30,9 +30,3 @@ struct PlaceCell: View {
         }
     }
 }
-
-struct PlaceCell_Previews: PreviewProvider {
-    static var previews: some View {
-        PlaceCell(placeVM: PlaceViewModel(name: "Tbilisi", country: "Georgia", notes: "Bla"))
-    }
-}

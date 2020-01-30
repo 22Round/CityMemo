@@ -19,6 +19,7 @@
 		962082AC23E04753009CF6B5 /* AddPlaceView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 962082AB23E04753009CF6B5 /* AddPlaceView.swift */; };
 		96AB252623E2E72C00F2F72A /* MapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96AB252523E2E72C00F2F72A /* MapView.swift */; };
 		96AB252823E2FED500F2F72A /* ViewSelectedPlace.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96AB252723E2FED500F2F72A /* ViewSelectedPlace.swift */; };
+		96AB252A23E3036100F2F72A /* CircularView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96AB252923E3036100F2F72A /* CircularView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -36,6 +37,7 @@
 		962082AB23E04753009CF6B5 /* AddPlaceView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddPlaceView.swift; sourceTree = "<group>"; };
 		96AB252523E2E72C00F2F72A /* MapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapView.swift; sourceTree = "<group>"; };
 		96AB252723E2FED500F2F72A /* ViewSelectedPlace.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewSelectedPlace.swift; sourceTree = "<group>"; };
+		96AB252923E3036100F2F72A /* CircularView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircularView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -104,6 +106,7 @@
 				960A852823E064B50027A55D /* PlaceCell.swift */,
 				96AB252523E2E72C00F2F72A /* MapView.swift */,
 				96AB252723E2FED500F2F72A /* ViewSelectedPlace.swift */,
+				96AB252923E3036100F2F72A /* CircularView.swift */,
 				962082A023E0466E009CF6B5 /* LaunchScreen.storyboard */,
 			);
 			path = View;
@@ -185,6 +188,7 @@
 				9620829523E0466C009CF6B5 /* SceneDelegate.swift in Sources */,
 				960A852923E064B50027A55D /* PlaceCell.swift in Sources */,
 				96AB252823E2FED500F2F72A /* ViewSelectedPlace.swift in Sources */,
+				96AB252A23E3036100F2F72A /* CircularView.swift in Sources */,
 				960A852723E050F20027A55D /* SwiftUIView.swift in Sources */,
 				9620829A23E0466C009CF6B5 /* ContentView.swift in Sources */,
 				9620829823E0466C009CF6B5 /* SwiftUI_CoreData.xcdatamodeld in Sources */,
