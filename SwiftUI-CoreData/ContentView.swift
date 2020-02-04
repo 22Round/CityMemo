@@ -12,7 +12,11 @@ struct ContentView: View {
     var body: some View {
         NavigationView{
             List {
-                AddPlaceView()
+                AddPlaceView { (success) in
+                    if success {
+                        
+                    }
+                }
                 ForEach(DummyData.mockPlaces(), id: \.id) {
                     item in
                     PlaceCell(placeVM: item)

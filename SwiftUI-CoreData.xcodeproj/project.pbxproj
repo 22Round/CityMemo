@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		960A852723E050F20027A55D /* SwiftUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 960A852623E050F20027A55D /* SwiftUIView.swift */; };
+		960A852723E050F20027A55D /* PlaceViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 960A852623E050F20027A55D /* PlaceViewModel.swift */; };
 		960A852923E064B50027A55D /* PlaceCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 960A852823E064B50027A55D /* PlaceCell.swift */; };
 		9620829323E0466C009CF6B5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9620829223E0466C009CF6B5 /* AppDelegate.swift */; };
 		9620829523E0466C009CF6B5 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9620829423E0466C009CF6B5 /* SceneDelegate.swift */; };
@@ -17,6 +17,7 @@
 		9620829F23E0466E009CF6B5 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9620829E23E0466E009CF6B5 /* Preview Assets.xcassets */; };
 		962082A223E0466E009CF6B5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 962082A023E0466E009CF6B5 /* LaunchScreen.storyboard */; };
 		962082AC23E04753009CF6B5 /* AddPlaceView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 962082AB23E04753009CF6B5 /* AddPlaceView.swift */; };
+		966EBEBB23E9C338005F1B3F /* AddPlaceViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 966EBEBA23E9C338005F1B3F /* AddPlaceViewModel.swift */; };
 		96AB252623E2E72C00F2F72A /* MapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96AB252523E2E72C00F2F72A /* MapView.swift */; };
 		96AB252823E2FED500F2F72A /* ViewSelectedPlace.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96AB252723E2FED500F2F72A /* ViewSelectedPlace.swift */; };
 		96AB252A23E3036100F2F72A /* CircularView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96AB252923E3036100F2F72A /* CircularView.swift */; };
@@ -25,7 +26,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		960A852623E050F20027A55D /* SwiftUIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUIView.swift; sourceTree = "<group>"; };
+		960A852623E050F20027A55D /* PlaceViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaceViewModel.swift; sourceTree = "<group>"; };
 		960A852823E064B50027A55D /* PlaceCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaceCell.swift; sourceTree = "<group>"; };
 		9620828F23E0466C009CF6B5 /* SwiftUI-CoreData.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "SwiftUI-CoreData.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		9620829223E0466C009CF6B5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -37,6 +38,7 @@
 		962082A123E0466E009CF6B5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		962082A323E0466E009CF6B5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		962082AB23E04753009CF6B5 /* AddPlaceView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddPlaceView.swift; sourceTree = "<group>"; };
+		966EBEBA23E9C338005F1B3F /* AddPlaceViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddPlaceViewModel.swift; sourceTree = "<group>"; };
 		96AB252523E2E72C00F2F72A /* MapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapView.swift; sourceTree = "<group>"; };
 		96AB252723E2FED500F2F72A /* ViewSelectedPlace.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewSelectedPlace.swift; sourceTree = "<group>"; };
 		96AB252923E3036100F2F72A /* CircularView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircularView.swift; sourceTree = "<group>"; };
@@ -99,7 +101,8 @@
 		962082A923E0467A009CF6B5 /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
-				960A852623E050F20027A55D /* SwiftUIView.swift */,
+				960A852623E050F20027A55D /* PlaceViewModel.swift */,
+				966EBEBA23E9C338005F1B3F /* AddPlaceViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -212,8 +215,9 @@
 				960A852923E064B50027A55D /* PlaceCell.swift in Sources */,
 				96AB252823E2FED500F2F72A /* ViewSelectedPlace.swift in Sources */,
 				96AB252A23E3036100F2F72A /* CircularView.swift in Sources */,
-				960A852723E050F20027A55D /* SwiftUIView.swift in Sources */,
+				960A852723E050F20027A55D /* PlaceViewModel.swift in Sources */,
 				9620829A23E0466C009CF6B5 /* ContentView.swift in Sources */,
+				966EBEBB23E9C338005F1B3F /* AddPlaceViewModel.swift in Sources */,
 				9620829823E0466C009CF6B5 /* SwiftUI_CoreData.xcdatamodeld in Sources */,
 				962082AC23E04753009CF6B5 /* AddPlaceView.swift in Sources */,
 				96D4506823E5F1D400EDFB2E /* CoreDataManager.swift in Sources */,

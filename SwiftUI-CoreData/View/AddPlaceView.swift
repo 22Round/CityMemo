@@ -14,6 +14,9 @@ struct AddPlaceView: View {
     @State var country:String = ""
     @State var note:String = ""
     
+    var onSave: (_ success:Bool) -> Void
+    @State private var showingAlert = false
+    
     var body: some View {
         VStack {
             TextField("Enter name here...", text: $name)
@@ -25,8 +28,12 @@ struct AddPlaceView: View {
             HStack{
                 
                 Button("Save favorite Place") {
-                    print("button Action")
+                    self.savePlace()
                 }
+                .alert(isPresented: $showingAlert) { () -> Alert in
+                    Alert(title: Text("Saved"), message: Text("Data saved to DB"), dismissButton:  .default(Text("OK")))
+                }
+                .disabled($name.wrappedValue.isEmpty)
             }
             .font(.headline)
             .padding(10)
@@ -34,5 +41,19 @@ struct AddPlaceView: View {
             .background(Color.orange)
             .cornerRadius(15)
         }.padding()
+    }
+    
+    private func savePlace(){
+        let vm = AddPlaceViewModel()
+        vm.name = self.$name.wrappedValue
+        vm.country = self.$country.wrappedValue
+        vm.notes = self.$note.wrappedValue
+        vm.savePlace {
+            self.showingAlert = true
+            self.onSave(true)
+            self.$name.wrappedValue = ""
+            self.$country.wrappedValue = ""
+            self.$note.wrappedValue = ""
+        }
     }
 }
