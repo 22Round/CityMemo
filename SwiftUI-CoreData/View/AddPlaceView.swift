@@ -26,7 +26,6 @@ struct AddPlaceView: View {
             TextField("Enter name note...", text: $note)
             Divider()
             HStack{
-                
                 Button("Save favorite Place") {
                     self.savePlace()
                 }
@@ -44,7 +43,7 @@ struct AddPlaceView: View {
     }
     
     private func savePlace(){
-        let vm = AddPlaceViewModel()
+        let vm = AddPlaceViewController()
         vm.name = self.$name.wrappedValue
         vm.country = self.$country.wrappedValue
         vm.notes = self.$note.wrappedValue

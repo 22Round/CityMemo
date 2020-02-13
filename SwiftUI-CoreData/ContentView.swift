@@ -9,18 +9,28 @@
 import SwiftUI
 
 struct ContentView: View {
+    
+    @ObservedObject var placeListVM = PlaceListViewController()
+    
     var body: some View {
         NavigationView{
             List {
                 AddPlaceView { (success) in
                     if success {
-                        
+                        self.placeListVM.fetchAllPlaces()
                     }
                 }
-                ForEach(DummyData.mockPlaces(), id: \.id) {
+                ForEach(placeListVM.places, id: \.id) {
                     item in
                     PlaceCell(placeVM: item)
+                }.onDelete { (offsets) in
+                    offsets.forEach { (index) in
+                        let p = self.placeListVM.places[index]
+                        self.placeListVM.deletePlace(id: p.id)
+                    }
                 }
+                
+                
             }.navigationBarTitle("Favorite Places")
         }
     }

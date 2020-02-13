@@ -1,5 +1,5 @@
 //
-//  AddPlaceViewModel.swift
+//  AddPlaceViewController.swift
 //  SwiftUI-CoreData
 //
 //  Created by Vakhtangi Beridze on 2/4/20.
@@ -8,7 +8,7 @@
 
 import Foundation
 
-class AddPlaceViewModel {
+class AddPlaceViewController {
     var name:String = ""
     var country:String = ""
     var notes:String = ""

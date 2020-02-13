@@ -10,16 +10,26 @@ import SwiftUI
 
 struct PlaceCell: View {
     
-    var placeVM:PlaceViewModel
+    let placeVM:PlaceViewModel
+    lazy var image:UIImage? = UIImage(data: placeVM.image)
+    
+    func getImage() -> UIImage? {
+        var mutatableSelf = self
+        return mutatableSelf.image
+    }
+    
     var body: some View {
         
         NavigationLink(destination: ViewSelectedPlace(placeVM: placeVM)){
             HStack{
-                Image("Building")
-                    .resizable()
-                    .frame(width: 66, height: 100)
-                    .aspectRatio(contentMode: .fit)
-                    .clipShape(Circle())
+                if getImage() != nil {
+                    Image(uiImage: getImage()!)
+                        .resizable()
+                        .frame(width: 66, height: 100)
+                        .aspectRatio(contentMode: .fit)
+                        .clipShape(Circle())
+                }
+                
                 
                 VStack(alignment: .leading){
                     Text(placeVM.name).font(.headline)
